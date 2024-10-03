@@ -1,10 +1,12 @@
 .header{
     background-color:hsl(240, 20%, 95%);
     display:flex;
+    top:-50px;
+    left:-10px;
+    padding-bottom: 50px;
     justify-content: center;
     align-items: center;
     position:relative;
-    
     height:100vh;
     width:100vw;
 }
@@ -12,10 +14,8 @@
 .card{
     background-color: white;
     padding: 15px;
-    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    gap:8px;
     align-items: center;
     width:400px;
     border-radius: 10px;
@@ -26,8 +26,13 @@
     width:370px;
     height:50px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 16px;
     padding-left: 12px;
+    border: 1px hsl(0, 0%, 80%) solid;
+}
+
+.auth{
+    padding-left: 120px;
 }
 
 button{
@@ -36,17 +41,51 @@ button{
     padding: 10px;
     font-weight:700;
     color: white;
+    cursor: pointer;
+    border: none;
 }
 
+.intro{
+    position: relative;
+    top:-50px;
+}
 
 .login{
     width:380px;
     background-color: blue;
     font-size: 20px;
+    transition: background-color 0.2s;
+}
+
+.login:hover{
+    background-color:hsl(240, 100%, 60%);;
 }
 
 
 .create{
     background-color: hsl(120, 50%, 55%);
     font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: background-color 0.2s;
+}
+
+.create:hover{
+    background-color:hsl(120, 50%, 45%);
+}
+
+
+
+.footer{
+    display:flex;
+    justify-content: center;
+    word-spacing: 15px;
+    color:hsl(0, 0%, 50%);
+    font-size:14px;
+}
+
+.content{
+    position: relative;
+    top:-20px;
+    width:1000px;
 }
